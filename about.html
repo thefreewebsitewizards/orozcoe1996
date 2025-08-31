@@ -32,7 +32,7 @@
                     <a href="events.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Events</a>
                     <a href="contact.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Contact</a>
                 </div>
-                <div class="flex md:hidden">
+                <div class="-mr-2 flex md:hidden">
                     <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-[#6b21a8] hover:bg-[#fbcfe8] focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
                         <span class="sr-only">Open main menu</span>
                         <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -44,7 +44,7 @@
         </div>
 
         <!-- Mobile menu -->
-        <div class="hidden md:hidden" id="mobile-menu">
+        <div class="hidden md:hidden w-full absolute top-16 left-0 z-40 transition-all duration-300 ease-in-out" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#f9a8d4]">
                 <a href="index.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Home</a>
                 <a href="about.html" class="bg-[#fbcfe8] text-[#6b21a8] block px-3 py-2 rounded-md text-base font-medium">About Me</a>
@@ -134,6 +134,16 @@
         </div>
     </footer>
     
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenuButton = document.getElementById("mobile-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            mobileMenuButton.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
