@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule & Clips - Inuwaifu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen">
+    <!-- Blossom Petals Animation -->
+    <div id="petals-container"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-[#f9a8d4] shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-8 rounded-full" src="assets/hero.jpg" alt="Inuwaifu Logo">
+                        <span class="ml-2 text-xl font-bold text-[#6b21a8]">Inuwaifu</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4">
+                    <a href="index.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Home</a>
+                    <a href="about.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">About Me</a>
+                    <a href="socials.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Socials</a>
+                    <a href="donations.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Donations & Merch</a>
+                    <a href="schedule.html" class="bg-[#fbcfe8] text-[#6b21a8] px-3 py-2 rounded-full text-sm font-medium">Schedule & Clips</a>
+                    <a href="events.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Events</a>
+                    <a href="contact.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Contact</a>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-[#6b21a8] hover:bg-[#fbcfe8] focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#f9a8d4]">
+                <a href="index.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">About Me</a>
+                <a href="socials.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Socials</a>
+                <a href="donations.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Donations & Merch</a>
+                <a href="schedule.html" class="bg-[#fbcfe8] text-[#6b21a8] block px-3 py-2 rounded-md text-base font-medium">Schedule & Clips</a>
+                <a href="events.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                <a href="contact.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Schedule & Clips Section -->
+    <section class="min-h-screen bg-[#fff5f9] flex items-center py-0 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            
+            <div class="mb-16">
+                <div class="text-center mb-6">
+                    <img src="assets/Schedule.png" alt="Weekly Schedule" class="mx-auto max-w-xs">
+                </div>
+                
+                <!-- Weekdays Schedule -->
+                <div class="mb-8">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#6b21a8] text-center mb-4">Weekdays</h3>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <div class="grid grid-cols-5 bg-[#f9a8d4] text-[#6b21a8] font-bold text-center">
+                            <div class="p-1 md:p-2 text-xs md:text-sm">Mon</div>
+                            <div class="p-1 md:p-2 text-xs md:text-sm">Tue</div>
+                            <div class="p-1 md:p-2 text-xs md:text-sm">Wed</div>
+                            <div class="p-1 md:p-2 text-xs md:text-sm">Thu</div>
+                            <div class="p-1 md:p-2 text-xs md:text-sm">Fri</div>
+                        </div>
+                        <div class="grid grid-cols-5 bg-white text-[#6b21a8] text-center">
+                            <div class="p-1 md:p-3 border-r border-b text-xs md:text-sm">
+                                <div class="font-semibold text-red-500">Off</div>
+                            </div>
+                            <div class="p-1 md:p-3 border-r border-b text-xs md:text-sm">
+                                <div class="font-semibold text-xs md:text-sm">6PM-9PM</div>
+                                <div class="text-xs text-gray-600 mt-1">Fortnite</div>
+                            </div>
+                            <div class="p-1 md:p-3 border-r border-b text-xs md:text-sm">
+                                <div class="font-semibold text-red-500">Off</div>
+                            </div>
+                            <div class="p-1 md:p-3 border-r border-b text-xs md:text-sm">
+                                <div class="font-semibold text-xs md:text-sm">7PM-10PM</div>
+                                <div class="text-xs text-gray-600 mt-1">Zelda TP</div>
+                            </div>
+                            <div class="p-1 md:p-3 border-b text-xs md:text-sm">
+                                <div class="font-semibold text-red-500">Off</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Weekend Schedule -->
+                <div class="mb-8">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#6b21a8] text-center mb-4">Weekend</h3>
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <div class="grid grid-cols-2 bg-[#f9a8d4] text-[#6b21a8] font-bold text-center">
+                            <div class="p-3 md:p-4 text-base md:text-lg">Sat</div>
+                            <div class="p-3 md:p-4 text-base md:text-lg">Sun</div>
+                        </div>
+                        <div class="grid grid-cols-2 bg-white text-[#6b21a8] text-center">
+                            <div class="p-4 md:p-6 border-r border-b text-sm md:text-base">
+                                <div class="font-semibold text-lg">3PM-6PM</div>
+                                <div class="text-sm md:text-base text-gray-600 mt-2">Scooby-Doo</div>
+                            </div>
+                            <div class="p-4 md:p-6 border-b text-sm md:text-base">
+                                <div class="font-semibold text-lg">Flexible</div>
+                                <div class="text-sm md:text-base text-gray-600 mt-2">Community</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="text-center text-[#6b21a8] mt-4 text-sm md:text-base">All times in GMT+8. Schedule may vary - follow me on socials for updates!</p>
+            </div>
+            
+            <div class="mb-8">
+                <div class="text-center mb-6">
+                    <img src="assets/Games.png" alt="Favorite Games" class="mx-auto max-w-xs">
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3 md:gap-8 justify-items-center">
+                    <img src="assets/ga (1).jpg" alt="Game 1" class="w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-lg object-cover shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/ga (2).jpg" alt="Game 2" class="w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-lg object-cover shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/ga (3).jpg" alt="Game 3" class="w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-lg object-cover shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/ga (4).jpg" alt="Game 4" class="w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-lg object-cover shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/ga (5).jpg" alt="Game 5" class="w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-lg object-cover shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/ga (6).jpg" alt="Game 6" class="w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-lg object-cover shadow-md hover:shadow-lg transition-shadow">
+                    <img src="assets/ga (7).jpg" alt="Game 7" class="w-28 h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-lg object-cover shadow-md hover:shadow-lg transition-shadow">
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-4xl font-bold text-[#6b21a8] mt-20 mb-12 text-center">HIGHLIGHTS</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card">
+                        <div class="aspect-video">
+                            <!-- Add a placeholder for the Twitch embed -->
+                            <div id="twitch-embed-1" style="width: 100%; height: 100%;"></div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-[#6b21a8] mb-2">Highlight: Fortnite with Miku catching dubs</h4>
+                            <p class="text-[#6b21a8] text-sm mb-1">Fortnite</p>
+                            <p class="text-[#6b21a8] text-xs">5 months ago</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card">
+                        <div class="aspect-video">
+                            <!-- Add a placeholder for the Twitch embed -->
+                            <div id="twitch-embed-2" style="width: 100%; height: 100%;"></div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-[#6b21a8] mb-2">Riding along with my pal shaggy</h4>
+                            <p class="text-[#6b21a8] text-sm mb-1">Scooby-Doo! Night of 100 Frights</p>
+                            <p class="text-[#6b21a8] text-xs">5 months ago</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card">
+                        <div class="aspect-video">
+                            <!-- Add a placeholder for the Twitch embed -->
+                            <div id="twitch-embed-3" style="width: 100%; height: 100%;"></div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-[#6b21a8] mb-2">Riding along with my pal shaggy</h4>
+                            <p class="text-[#6b21a8] text-sm mb-1">Scooby-Doo! Night of 100 Frights</p>
+                            <p class="text-[#6b21a8] text-xs">5 months ago</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card">
+                        <div class="aspect-video">
+                            <!-- Add a placeholder for the Twitch embed -->
+                            <div id="twitch-embed-4" style="width: 100%; height: 100%;"></div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-[#6b21a8] mb-2">Highlight: Cozy up with Scooby and gang uwu</h4>
+                            <p class="text-[#6b21a8] text-sm mb-1">Scooby-Doo! Night of 100 Frights</p>
+                            <p class="text-[#6b21a8] text-xs">5 months ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card">
+                        <div class="aspect-video">
+                            <!-- Add a placeholder for the Twitch embed -->
+                            <div id="twitch-embed-5" style="width: 100%; height: 100%;"></div>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-[#6b21a8] mb-2">Highlight: Blast from the Past : Gamecube Zelda Twilight Princess</h4>
+                            <p class="text-[#6b21a8] text-sm mb-1">The Legend of Zelda: Twilight Princess</p>
+                            <p class="text-[#6b21a8] text-xs">6 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Game Clips Section -->
+        <section class="py-0 mb-20 bg-[#fff5f9]">
+            <div class="container mx-auto px-4">
+                <h3 class="text-4xl font-bold text-[#6b21a8] mt-20 mb-12 text-center">GAME CLIPS</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:lz34bbnsqkqi4gvp4slyjdfk/app.bsky.feed.post/3lsmcoyjfpk24" data-bluesky-cid="bafyreigyhcldc5tkubkgbpoczo4hawzqcxr5pvcttuzlb2jckkdhvrt4yq" data-bluesky-embed-color-mode="system"><p lang="en">#inuwaifu #promosky #twitchaffiliate #inu #waifu #uwu #gamergirl
+
+twitch.tv/inuwaifu<br><br><a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lsmcoyjfpk24?ref_src=embed">[image or embed]</a></p>&mdash; Inuwaifu (<a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk?ref_src=embed">@inuwaifu.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lsmcoyjfpk24?ref_src=embed">Jun 28, 2025 at 2:51 AM</a></blockquote>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:lz34bbnsqkqi4gvp4slyjdfk/app.bsky.feed.post/3lsmcoyjfpk24" data-bluesky-cid="bafyreigyhcldc5tkubkgbpoczo4hawzqcxr5pvcttuzlb2jckkdhvrt4yq" data-bluesky-embed-color-mode="system"><p lang="en">#inuwaifu #promosky #twitchaffiliate #inu #waifu #uwu #gamergirl
+
+twitch.tv/inuwaifu<br><br><a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lsmcoyjfpk24?ref_src=embed">[image or embed]</a></p>&mdash; Inuwaifu (<a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk?ref_src=embed">@inuwaifu.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lsmcoyjfpk24?ref_src=embed">Jun 28, 2025 at 2:51 AM</a></blockquote>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:lz34bbnsqkqi4gvp4slyjdfk/app.bsky.feed.post/3lskhv4vccc2q" data-bluesky-cid="bafyreiawz3hhkvddsaosveah3imb2bdsm5hvlweb2sfg2tvfs63m424eiy" data-bluesky-embed-color-mode="system"><p lang="en">#fortnite #inuwaifu #promosky #twitch #gamergirl #uwu
+
+www.allmylinks.com/inuwaifu<br><br><a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lskhv4vccc2q?ref_src=embed">[image or embed]</a></p>&mdash; Inuwaifu (<a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk?ref_src=embed">@inuwaifu.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lskhv4vccc2q?ref_src=embed">Jun 27, 2025 at 9:18 AM</a></blockquote>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                         <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:lz34bbnsqkqi4gvp4slyjdfk/app.bsky.feed.post/3lsjycaqm622t" data-bluesky-cid="bafyreib6z6flldkytmzcbbp4ua3wfaat72hqn7apv3uly56qzv5ov4ynfm" data-bluesky-embed-color-mode="system"><p lang="en">#promosky
+ #inuwaifu
+ #fortnite
+ 
+ twitch.tv/inuwaifu<br><br><a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lsjycaqm622t?ref_src=embed">[image or embed]</a></p>&mdash; Inuwaifu (<a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk?ref_src=embed">@inuwaifu.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lsjycaqm622t?ref_src=embed">Jun 27, 2025 at 4:39 AM</a></blockquote>
+                     </div>
+                     
+                     <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                         <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:lz34bbnsqkqi4gvp4slyjdfk/app.bsky.feed.post/3lsazxvyyzs2c" data-bluesky-cid="bafyreie6dzn3i6lbqaxsowti2lrucam4ewuvh7cupcuti47l5x5j4fypsq" data-bluesky-embed-color-mode="system"><p lang="en">✨ who said snipers were necessary? ✨
+
+#promosky
+
+twitch.tv/inwaifu<br><br><a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lsazxvyyzs2c?ref_src=embed">[image or embed]</a></p>&mdash; Inuwaifu (<a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk?ref_src=embed">@inuwaifu.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lsazxvyyzs2c?ref_src=embed">Jun 23, 2025 at 3:15 PM</a></blockquote>
+                     </div>
+                     
+                     <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                         <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:lz34bbnsqkqi4gvp4slyjdfk/app.bsky.feed.post/3lsabl57v4c2v" data-bluesky-cid="bafyreie4g7ircfxjoemzbvvcalyk5umz7hfrhhcik2p7urui3qaqgg5frq" data-bluesky-embed-color-mode="system"><p lang="en">#promosky #gamergirl
+
+twitch.tv/inuwaifu<br><br><a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lsabl57v4c2v?ref_src=embed">[image or embed]</a></p>&mdash; Inuwaifu (<a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk?ref_src=embed">@inuwaifu.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lsabl57v4c2v?ref_src=embed">Jun 23, 2025 at 7:59 AM</a></blockquote>
+                     </div>
+                     
+                     <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                         <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:lz34bbnsqkqi4gvp4slyjdfk/app.bsky.feed.post/3lmvu5jsp322r" data-bluesky-cid="bafyreifxrkfydd3saq3usolmqpc65r3a5baeuuhr7k5pw6qcw2eddlupmq" data-bluesky-embed-color-mode="system"><p lang="en">Lets battle royale it! Come join the chat of your favorite uwu girl
+Let's game and have fun!
+
+twitch.tv/inuwaifu<br><br><a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lmvu5jsp322r?ref_src=embed">[image or embed]</a></p>&mdash; Inuwaifu (<a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk?ref_src=embed">@inuwaifu.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lmvu5jsp322r?ref_src=embed">Apr 16, 2025 at 1:26 PM</a></blockquote>
+                     </div>
+                     
+                     <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                         <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:lz34bbnsqkqi4gvp4slyjdfk/app.bsky.feed.post/3lmstbiumes2b" data-bluesky-cid="bafyreifa4jp37t6rzq6x23knpdkuds6znagqp5kj6g6v6sbesjtnppojqi" data-bluesky-embed-color-mode="system"><p lang="en"><br><br><a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lmstbiumes2b?ref_src=embed">[image or embed]</a></p>&mdash; Inuwaifu (<a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk?ref_src=embed">@inuwaifu.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lmstbiumes2b?ref_src=embed">Apr 15, 2025 at 8:32 AM</a></blockquote>
+                     </div>
+                     
+                     <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                         <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:lz34bbnsqkqi4gvp4slyjdfk/app.bsky.feed.post/3lkbs5i7mu22q" data-bluesky-cid="bafyreib5nzzpi3qasnh7ummmlptcwgjwj4w4smzxu5cyoghrhoixs5jsaa" data-bluesky-embed-color-mode="system"><p lang="en">Recent Zelda Twilight Princess stream<br><br><a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lkbs5i7mu22q?ref_src=embed">[image or embed]</a></p>&mdash; Inuwaifu (<a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk?ref_src=embed">@inuwaifu.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:lz34bbnsqkqi4gvp4slyjdfk/post/3lkbs5i7mu22q?ref_src=embed">Mar 14, 2025 at 3:07 AM</a></blockquote>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Load the Twitch embed script -->
+        <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+        <!-- Create Twitch.Player objects for all embeds -->
+        <script type="text/javascript">
+          new Twitch.Player("twitch-embed-1", {
+            video: "2426341337",
+            width: "100%",
+            height: "100%"
+          });
+          
+          new Twitch.Player("twitch-embed-2", {
+            video: "2410865036",
+            width: "100%",
+            height: "100%"
+          });
+          
+          new Twitch.Player("twitch-embed-3", {
+            video: "2410861219",
+            width: "100%",
+            height: "100%"
+          });
+          
+          new Twitch.Player("twitch-embed-4", {
+            video: "2410861217",
+            width: "100%",
+            height: "100%"
+          });
+          
+          new Twitch.Player("twitch-embed-5", {
+            video: "2401864806",
+            width: "100%",
+            height: "100%"
+          });
+        </script>
+
+        <!-- Load the BlueSky embed script -->
+        <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+
+    <!-- Footer -->
+    <footer class="bg-[#6b21a8] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start">
+                        <img src="assets/hero.jpg" alt="Inuwaifu Logo" class="h-10 w-10 rounded-full mr-3">
+                        <span class="text-xl font-bold">Inuwaifu</span>
+                    </div>
+                    <p class="mt-2 text-[#f9a8d4]">Your favorite uwu gamer girl streamer</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="https://twitch.tv/inuwaifu" target="_blank" class="bg-[#f9a8d4] hover:bg-[#fbcfe8] text-[#6b21a8] w-10 h-10 rounded-full flex items-center justify-center glow">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                    <a href="https://instagram.com/inuwaifu" target="_blank" class="bg-[#f9a8d4] hover:bg-[#fbcfe8] text-[#6b21a8] w-10 h-10 rounded-full flex items-center justify-center glow">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://discord.com/invite/b6BdgPzAv5" target="_blank" class="bg-[#f9a8d4] hover:bg-[#fbcfe8] text-[#6b21a8] w-10 h-10 rounded-full flex items-center justify-center glow">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://bsky.app/profile/inuwaifu.bsky.social" target="_blank" class="bg-[#f9a8d4] hover:bg-[#fbcfe8] text-[#6b21a8] w-10 h-10 rounded-full flex items-center justify-center glow">
+                        <i class="fas fa-cloud"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@Inuwaifu" target="_blank" class="bg-[#f9a8d4] hover:bg-[#fbcfe8] text-[#6b21a8] w-10 h-10 rounded-full flex items-center justify-center glow">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#f9a8d4] pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#f9a8d4] mb-4 md:mb-0">© 2025 Inuwaifu. All rights reserved.</p>
+                
+                <div class="flex space-x-6">
+                    <a href="https://thefreewebsitewizards.com/?fbclid=PAZXh0bgNhZW0CMTEAAad0Jm-GNlXnPPJ1LVG1DBVBoUGdRHC5m3FFwUqGHjUfujAnDPDhsINN8mAv1A_aem_owWh2qpkEErFPYCqV9cPEg" target="_blank" class="text-[#f9a8d4] hover:text-white">Built by The Free Website Wizards</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

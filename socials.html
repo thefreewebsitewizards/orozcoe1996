@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socials - Inuwaifu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen">
+    <!-- Blossom Petals Animation -->
+    <div id="petals-container"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-[#f9a8d4] shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-8 rounded-full" src="assets/hero.jpg" alt="Inuwaifu Logo">
+                        <span class="ml-2 text-xl font-bold text-[#6b21a8]">Inuwaifu</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4">
+                    <a href="index.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Home</a>
+                    <a href="about.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">About Me</a>
+                    <a href="socials.html" class="bg-[#fbcfe8] text-[#6b21a8] px-3 py-2 rounded-full text-sm font-medium">Socials</a>
+                    <a href="donations.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Donations & Merch</a>
+                    <a href="schedule.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Schedule & Clips</a>
+                    <a href="events.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Events</a>
+                    <a href="contact.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] px-3 py-2 rounded-full text-sm font-medium glow">Contact</a>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-[#6b21a8] hover:bg-[#fbcfe8] focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#f9a8d4]">
+                <a href="index.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">About Me</a>
+                <a href="socials.html" class="bg-[#fbcfe8] text-[#6b21a8] block px-3 py-2 rounded-md text-base font-medium">Socials</a>
+                <a href="donations.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Donations & Merch</a>
+                <a href="schedule.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Schedule & Clips</a>
+                <a href="events.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                <a href="contact.html" class="text-[#6b21a8] hover:bg-[#fbcfe8] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Socials Section -->
+    <section class="min-h-screen bg-[#fff5f9] flex items-center py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="text-center mb-12">
+                <img src="assets/Socials.png" alt="Find Me Online" class="mx-auto max-w-md md:max-w-lg">
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Instagram IRL -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <div class="text-[#e1306c] text-4xl mb-4 flex justify-center">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-[#6b21a8] mb-2">@inuwifey_4651</h3>
+                    <p class="text-center text-[#6b21a8] mb-4">My IRL adventures</p>
+                    <a href="https://instagram.com/inuwifey_4651" target="_blank" class="block bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:opacity-90 text-white text-center px-4 py-2 rounded-full font-medium glow">Follow</a>
+                </div>
+                
+                <!-- Instagram Gaming -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <div class="text-[#e1306c] text-4xl mb-4 flex justify-center">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-[#6b21a8] mb-2">@inuwaifu</h3>
+                    <p class="text-center text-[#6b21a8] mb-4">Gaming & business</p>
+                    <a href="https://instagram.com/inuwaifu" target="_blank" class="block bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:opacity-90 text-white text-center px-4 py-2 rounded-full font-medium glow">Follow</a>
+                </div>
+                
+                <!-- YouTube -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <div class="text-[#ff0000] text-4xl mb-4 flex justify-center">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-[#6b21a8] mb-2">YouTube</h3>
+                    <p class="text-center text-[#6b21a8] mb-4">Gaming videos & content</p>
+                    <a href="https://www.youtube.com/@Inuwaifu" target="_blank" class="block bg-[#ff0000] hover:bg-[#cc0000] text-white text-center px-4 py-2 rounded-full font-medium glow">Subscribe</a>
+                </div>
+                
+                <!-- Ko-fi -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <div class="text-[#ff5e5b] text-4xl mb-4 flex justify-center">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-[#6b21a8] mb-2">Ko-fi</h3>
+                    <p class="text-center text-[#6b21a8] mb-4">Support my content</p>
+                    <a href="https://ko-fi.com/inuwaifu" target="_blank" class="block bg-[#ff5e5b] hover:bg-[#ff4c4a] text-white text-center px-4 py-2 rounded-full font-medium glow">Donate</a>
+                </div>
+
+                <!-- Twitch -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <div class="text-[#9147ff] text-4xl mb-4 flex justify-center">
+                        <i class="fab fa-twitch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-[#6b21a8] mb-2">Twitch</h3>
+                    <p class="text-center text-[#6b21a8] mb-4">Watch me stream games!</p>
+                    <a href="https://twitch.tv/inuwaifu" target="_blank" class="block bg-[#9147ff] hover:bg-[#772ce8] text-white text-center px-4 py-2 rounded-full font-medium glow">Follow</a>
+                </div>
+                
+                <!-- Discord -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <div class="text-[#5865f2] text-4xl mb-4 flex justify-center">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-[#6b21a8] mb-2">Discord</h3>
+                    <p class="text-center text-[#6b21a8] mb-4">Join our community!</p>
+                    <a href="https://discord.com/invite/b6BdgPzAv5" target="_blank" class="block bg-[#5865f2] hover:bg-[#4752c4] text-white text-center px-4 py-2 rounded-full font-medium glow">Join</a>
+                </div>
+                
+                <!-- Facebook -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <div class="text-[#1877f2] text-4xl mb-4 flex justify-center">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-[#6b21a8] mb-2">Facebook</h3>
+                    <p class="text-center text-[#6b21a8] mb-4">Follow my updates</p>
+                    <a href="https://www.facebook.com/profile.php?id=61573874791246&mibextid=ZbWKwL" target="_blank" class="block bg-[#1877f2] hover:bg-[#166fe5] text-white text-center px-4 py-2 rounded-full font-medium glow">Follow</a>
+                </div>
+                
+                <!-- BlueSky -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <div class="text-[#1185fe] text-4xl mb-4 flex justify-center">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-[#6b21a8] mb-2">BlueSky</h3>
+                    <p class="text-center text-[#6b21a8] mb-4">@inuwaifu.bsky.social</p>
+                    <a href="https://bsky.app/profile/inuwaifu.bsky.social" target="_blank" class="block bg-[#1185fe] hover:bg-[#0a6bc5] text-white text-center px-4 py-2 rounded-full font-medium glow">Follow</a>
+                </div>
+
+                <!-- Amazon Wishlist -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <div class="text-[#ff9900] text-4xl mb-4 flex justify-center">
+                        <i class="fab fa-amazon"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-[#6b21a8] mb-2">Amazon</h3>
+                    <p class="text-center text-[#6b21a8] mb-4">Gaming & Streaming Wishlist</p>
+                    <a href="https://www.amazon.com/hz/wishlist/ls/55432ND1HU6P?ref_=wl_share" target="_blank" class="block bg-[#ff9900] hover:bg-[#e6870a] text-white text-center px-4 py-2 rounded-full font-medium glow">View</a>
+                </div>
+                
+                <!-- Cash App -->
+                <div class="bg-white p-6 rounded-xl shadow-md card">
+                    <div class="text-[#00d632] text-4xl mb-4 flex justify-center">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-[#6b21a8] mb-2">Cash App</h3>
+                    <p class="text-center text-[#6b21a8] mb-4">Quick donations</p>
+                    <a href="https://cash.app/inuwaifu" target="_blank" class="block bg-[#00d632] hover:bg-[#00c12b] text-white text-center px-4 py-2 rounded-full font-medium glow">Send</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#6b21a8] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start">
+                        <img src="assets/hero.jpg" alt="Inuwaifu Logo" class="h-10 w-10 rounded-full mr-3">
+                        <span class="text-xl font-bold">Inuwaifu</span>
+                    </div>
+                    <p class="mt-2 text-[#f9a8d4]">Your favorite uwu gamer girl streamer</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="https://twitch.tv/inuwaifu" target="_blank" class="bg-[#f9a8d4] hover:bg-[#fbcfe8] text-[#6b21a8] w-10 h-10 rounded-full flex items-center justify-center glow">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                    <a href="https://instagram.com/inuwaifu" target="_blank" class="bg-[#f9a8d4] hover:bg-[#fbcfe8] text-[#6b21a8] w-10 h-10 rounded-full flex items-center justify-center glow">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://discord.com/invite/b6BdgPzAv5" target="_blank" class="bg-[#f9a8d4] hover:bg-[#fbcfe8] text-[#6b21a8] w-10 h-10 rounded-full flex items-center justify-center glow">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://bsky.app/profile/inuwaifu.bsky.social" target="_blank" class="bg-[#f9a8d4] hover:bg-[#fbcfe8] text-[#6b21a8] w-10 h-10 rounded-full flex items-center justify-center glow">
+                        <i class="fas fa-cloud"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@Inuwaifu" target="_blank" class="bg-[#f9a8d4] hover:bg-[#fbcfe8] text-[#6b21a8] w-10 h-10 rounded-full flex items-center justify-center glow">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#f9a8d4] pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#f9a8d4] mb-4 md:mb-0">© 2025 Inuwaifu. All rights reserved.</p>
+                
+                <div class="flex space-x-6">
+                    <a href="https://thefreewebsitewizards.com/?fbclid=PAZXh0bgNhZW0CMTEAAad0Jm-GNlXnPPJ1LVG1DBVBoUGdRHC5m3FFwUqGHjUfujAnDPDhsINN8mAv1A_aem_owWh2qpkEErFPYCqV9cPEg" target="_blank" class="text-[#f9a8d4] hover:text-white">Built by The Free Website Wizards</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
