@@ -24,28 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Blossom petals animation
-    function createPetal() {
-        const petal = document.createElement('div');
-        petal.className = 'blossom';
-        petal.style.left = Math.random() * 100 + 'vw';
-        petal.style.setProperty('--end-x', (Math.random() - 0.5) * 200 + 'px');
-        petal.style.animationDuration = (Math.random() * 3 + 2) + 's';
-        petal.style.animationDelay = Math.random() * 2 + 's';
-        
-        const container = document.getElementById('petals-container');
-        if (container) {
-            container.appendChild(petal);
-            
-            setTimeout(() => {
-                petal.remove();
-            }, 5000);
-        }
-    }
-    
-    // Create petals periodically
-    setInterval(createPetal, 300);
+
     
     // Email subscription for merch waitlist
     const emailForm = document.querySelector('input[type="email"] + button');
